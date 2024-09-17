@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Odliczator</title>
+		<link rel="icon" type="image/x-icon" href="./img/favicon-32x32.webp" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<div class="counter-app">
+		<div class="settings">
+			<h1>ustawienia</h1>
+			<label for="event-name">Nazwa wydarzenia:</label>
+			<input type="text" id="event-name" value="Nowy rok" />
+			<table class="date">
+				<tr>
+					<td><label for="event-day">Dzień:</label></td>
+					<td><label for="event-month">Miesiąc:</label></td>
+					<td><label for="event-year">Rok:</label></td>
+				</tr>
+				<tr>
+					<td><input type="number" id="event-day" min="1" max="31" value="1" /></td>
+					<td><input type="number" id="event-month" min="1" max="12" value="1" /></td>
+					<td><input type="number" id="event-year" min="2024" max="3000" value="2024" /></td>
+				</tr>
+			</table>
+			<label for="event-img">Link do obrazka:</label>
+			<input type="text" id="event-img" value="default.jpg" />
+			<button class="save">Zapisz</button>
+		</div>
+		<div class="app-body">
+			<div class="image-section">
+				<div class="settings-btn"><i class="fa-solid fa-sliders"></i></div>
+			</div>
+			<div class="time-section">
+				<h3><span class="event">Nowy rok</span> za:</h3>
+				<div class="time-cards">
+					<div class="card">
+						<p class="days-count number">1</p>
+						<p class="card-title">Dni</p>
+					</div>
+					<div class="card">
+						<p class="hours-count number">1</p>
+						<p class="card-title">Godzin</p>
+					</div>
+
+					<div class="card">
+						<p class="minutes-count number">1</p>
+						<p class="card-title">Minut</p>
+					</div>
+					<div class="card">
+						<p class="seconds-count number">1</p>
+						<p class="card-title">Sekund</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<body>
+		<script src="https://kit.fontawesome.com/e03e0916a7.js" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
